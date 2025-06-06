@@ -1,0 +1,31 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 57px;
+  bottom: 0;
+  background-color: white;
+  width: 72px;
+  padding-top: 4px;
+  z-index: 200;
+}
+
+.sidebar-link {
+  font-size: 10px;
+  height: 74px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar-link:hover {
+  background-color: #e3e3e3;
+}
+
+/* a more advanced way to target elements in the same class tag/selector
+so, in this case, we are targeting all the imgs tags in the sidebar-link class */
+.sidebar-link img {
+  height: 24px;
+  margin-bottom: 6.5px;
+}
