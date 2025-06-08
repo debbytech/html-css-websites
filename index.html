@@ -3,515 +3,362 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Youtube</title>
-  <link rel="icon" href="./images/favicon.png" type="image/png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./youtube styles/video grid style.css">
-  <link rel="stylesheet" href="./youtube styles/header section style.css">
-  <link rel="stylesheet" href="./youtube styles/general.css">
-  <link rel="stylesheet" href="./youtube styles/sidebar.css">
+  <title>FZ tvseries (Clone), shows/Cartoon, Anime, Manga/Documentaries for mobiles in avi/3gp format - MobileTVshows</title>
+  <link rel="stylesheet" href="./fztvseries-styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="icon" href="./images/favicon.jpeg" type="image/png">
 </head>
+
 <body>
-  <header class="header">
-    <div class="left-section">
-      <img class="hamburger-menu" src="./svgs/hamburger-menu.svg" alt="Menu Icon">
-      <img class="youtube-logo" src="./svgs/youtube-logo.svg" alt="YouTube Logo" width="90">
-      
-    </div>
-    
-    <div class="middle-section">
-
-      <input class="search" type="text" placeholder="Search">
-
-      <button class="search-button">
-        <img src="./svgs/search.svg" alt="Search Icon" height="24px">
-<!--to create a tool tip, we should put position aboslute inside position relative-->
-        <div class="tooltip">Search</div>
-
-      <button class="voice-search-button">
-        <img src="./svgs/voice-search-icon.svg" alt="voice-search-icon">
-
-        <div class="tooltip">Search with your voice</div>
-      </button>
-
-    </div>
-    
-    <div class="right-section">
-
-      <div class="upload-container">
-        <img class="upload" src="svgs/upload.svg" alt="upload icon" height="24px">
-
-        <div class="tooltip">Create</div>
-      </div>
-
-      <div class="apps-container">
-        <img class="apps" src="svgs/youtube-apps.svg" alt="youtube apps icon" height="24px">
-
-        <div class="tooltip">YouTube-apps</div>
-      </div>
-
-      <div class="notification-container">
-        <img class="notification" src="svgs/notifications.svg" alt="notification iccon" height="24px">
-
-        <div class="notification-count">3</div>
-
-        <div class="tooltip">Notifications</div>
-      </div>
-
-      <img class="profile-picture" src="./images/avatar.jpg" alt="profile picture">
-
-    </div>
-      
-  </header>
-
-  <nav class="sidebar">
-    
-    <div class="sidebar-link">
-      <img class="sidebar-link img" src="./svgs/home.svg" alt="Home Icon">
-      <div>Home</div>
-    </div>
-
-    <div class="sidebar-link">
-      <img class="sidebar-link img" src="./svgs/explore.svg" alt="Explore Icon">
-      <div>Explore</div>
-    </div>
-
-     <div class="sidebar-link">
-      <img class="sidebar-link img" src="./svgs/subscriptions.svg" alt="Subscriptions Icon">
-      <div>Subscriptions</div>
-    </div>
-
-    <div class="sidebar-link">
-      <img class="sidebar-link img" src="./svgs/library.svg" alt="Library Icon">
-      <div>Originals</div>
-    </div>
-
-     <div class="sidebar-link">
-      <img class="sidebar-link img" src="./svgs/youtube-music.svg" alt="Youtube Music Icon">
-      <div>Youtube Music</div>
-    </div>
-
-    <div class="sidebar-link">
-      <img class="sidebar-link img" src="./svgs/library.svg" alt="Library Icon">
-      <div>Library</div>
-    </div>
-
-  </nav>
-
- <main>
-   <section class="videos-grid">
-
-    <div class="video-card">
-      <div class="thumbnail-container">
-        <img class="thumbnail-1" src="./images/thumbnail-1.webp">
-
-        <div class="video-time">14:20</div>
-      </div>
-      
-      <div class="channel-details-grid">
-        <!-- Channel image and info -->
-        <div class="channel-image">
-          <img class="channel-picture" src="./images/channel-1.jpeg" alt="profile image">
-        </div>
-
-        <div class="channel-info"> 
-          <p class="video-title">
-            Talking Tech and AI with Google CEO Sundar Pichai!
-          </p>
-
-          <p class="channel-author">
-            Marques Brownlee ✓
-          </p>
-
-          <p class="video-stats">
-            3.4M views · 6 months ago
-          </p>
-
-        </div>
-
-        <div class="hover-card">
-          <div class="avatar">
-          <img class="ppicture" src="./images/avatar.jpg" alt="User Avatar">
-          </div>  
+  <div class="logo2">
+    <a href="//fztvseries.live/index.php">
+      <img src="./images/fztvseries2.png" alt="FZTVSeries Logo" width="350px">
+    </a>
+    <hr width="50%">
+    <div class="user-status">
   
-          <div class="info">
-            <div style="display: inline-block;">
-            <p class="title">Marques Brownlee</p>
+    Signed in as Quadri Adewale (
+    <a href="back.php" class="user-link">&lt;&lt; Back</a> |
+    <a href="logout.php" class="user-link">Logout</a>
+    )
+  
+</div>
+
+  </div>
+
+  <div style="position: fixed;bottom: -4px; right: -5px; z-index: 3000;">
+    <button onclick="window.location.href='//fztvseries.live/back.php';" style="background-color:#FFD700;color:grey;padding: 5px 12px;border-radius: 4px;border-color: #FFD700;">
+    &lt;&lt;Back</button>
+  </div>
+
+  <div class="searchbox" style="text-align: center;">
+    
+      <form id="searchform" method="GET" action="//fztvseries.live/search.php">
+        <fieldset>
+          <legend style="text-align: left;">
+            <b>
+              <u>Search for</u>
+            </b>
+          </legend>
+          <input id="searchname" type="text" placeholder name="search" value="">
+          &nbsp;
+          <input type="submit" name="beginsearch" value="Search">
+          <br>
+
+<!-- <form style='display-inline' id="vsearch" method="get" action="search.php">-->
+
+          <div class="speech" style="display: inline;">
+            <input type="hidden" name="vsearch" id="transcript">
+            <div id="micinform" style="float:right;text-align:left;font-size:10px;padding:5px;right:10px;background-color:#ADD8E6;display:none;">Recording...</div>
+            <div id="beginvsearch" style="float:right;text-align:left;font-size:10px;padding:5px;right:10px;background-color:green;display:none;">Searching TV shows...</div>
+            <img style="float: right;" onclick="starDictation()" height="30px" width="30px" src="./images/gmic.svg" alt="Voice Search" title="Voice Search">
           </div>
 
-            <div style="display: inline-block;">
-            <p class="views">3.4M views · 6 months ago</p></div>
-        </div>
-
-      </div>
-
-      </div>
-      
-    </div>
-
-    <div class="video-card">
-      <div class="thumbnail-container">
-        <img class="thumbnail-1" src="./images/thumbnail-2.webp">
-
-        <div class="video-time">8:22</div>
-      </div>
-      
-      <div class="channel-details-grid">
-        <!-- Channel image and info -->
-        <div class="channel-image">
-          <img class="channel-picture" src="./images/channel-2.jpeg" alt="profile image">
-        </div>
-
-        <div class="channel-info"> 
-          <p class="video-title">
-            Try Not To Laugh Challenge #9
-          </p>
-
-          <p class="channel-author">
-            Markiplier
-          </p>
-
-          <p class="video-stats">
-            19M views · 4 years ago
-          </p>
-
-        </div>
-
-      </div>
-      
-    </div>
-
-    <div class="video-card">
-      <div class="thumbnail-container">
-        <img class="thumbnail-1" src="./images/thumbnail-3.webp">
-
-        <div class="video-time">9:13</div>
-      </div>
-      
-      <div class="channel-details-grid">
-        <!-- Channel image and info -->
-        <div class="channel-image">
-          <img class="channel-picture" src="./images/channel-3.jpeg" alt="profile image">
-        </div>
-
-        <div class="channel-info"> 
-          <p class="video-title">
-            Crazy Tik Toks Taken Moments Before DISASTER
-          </p>
-
-          <p class="channel-author">
-            SSSniperWolf
-          </p>
-
-          <p class="video-stats">
-            12M views · 1 year ago
-          </p>
-
-        </div>
-
-      </div>
-      
-    </div>
-
-    <div class="video-card">
-      <div class="thumbnail-container">
-        <img class="thumbnail-1" src="./images/thumbnail-4.webp">
-
-        <div class="video-time">22:09</div>
-      </div>
-      
-      <div class="channel-details-grid">
-        <!-- Channel image and info -->
-        <div class="channel-image">
-          <img class="channel-picture" src="./images/channel-4.jpeg" alt="profile image">
-        </div>
-
-        <div class="channel-info"> 
-          <p class="video-title">
-            The Simplest Math Problem No One Can Solve - Collatz Conjecture
-          </p>
-
-          <p class="channel-author">
-            Veritasium
-          </p>
-
-          <p class="video-stats">
-            18M views · 4 months ago
-          </p>
-
-        </div>
-
-      </div>
-      
-    </div>
-
-    <div class="video-card">
-      <div class="thumbnail-container">
-        <img class="thumbnail-1" src="./images/thumbnail-5.webp">
-
-        <div class="video-time">11:17</div>
-      </div>
-      
-      <div class="channel-details-grid">
-        <!-- Channel image and info -->
-        <div class="channel-image">
-          <img class="channel-picture" src="./images/channel-5.jpeg" alt="profile image">
-        </div>
-
-        <div class="channel-info"> 
-          <p class="video-title">
-            Kadane's Algorithm to Maximum Sum Subarray Problem
-          </p>
-
-          <p class="channel-author">
-            CS Dojo
-          </p>
-
-          <p class="video-stats">
-            519K views · 5 years ago
-          </p>
-
-        </div>
-
-      </div>
-      
-    </div>
-
-    <div class="video-card">
-      <div class="thumbnail-container">
-        <img class="thumbnail-1" src="./images/thumbnail-6.webp">
-
-        <div class="video-time">19:59</div>
-      </div>
-      
-      <div class="channel-details-grid">
-        <!-- Channel image and info -->
-        <div class="channel-image">
-          <img class="channel-picture" src="./images/channel-6.jpeg" alt="profile image">
-        </div>
-
-        <div class="channel-info"> 
-          <p class="video-title">
-            Anything You Can Fit In The Circle I’ll Pay For
-          </p>
-
-          <p class="channel-author">
-            MrBeast
-          </p>
-
-          <p class="video-stats">
-            141M views · 1 year ago
-          </p>
-
-        </div>
-
-      </div>
-      
-    </div>
-
-     <div class="video-card">
-      <div class="thumbnail-container">
-        <img class="thumbnail-1" src="./images/thumbnail-7.webp">
-
-        <div class="video-time">10:13</div>
-      </div>
-      
-      <div class="channel-details-grid">
-        <!-- Channel image and info -->
-        <div class="channel-image">
-          <img class="channel-picture" src="./images/channel-7.jpeg" alt="profile image">
-        </div>
-
-        <div class="channel-info"> 
-          <p class="video-title">
-            Why Planes Don't Fly Over Tibet
-          </p>
-
-          <p class="channel-author">
-            RealLifeLore
-          </p>
-
-          <p class="video-stats">
-            6.6M views · 1 year ago
-          </p>
-
-        </div>
-
-      </div>
-      
-    </div>
-
-    <div class="video-card">
-      <div class="thumbnail-container">
-        <img class="thumbnail-1" src="./images/thumbnail-8.webp">
-
-        <div class="video-time">7:12</div>
-      </div>
-      
-      <div class="channel-details-grid">
-        <!-- Channel image and info -->
-        <div class="channel-image">
-          <img class="channel-picture" src="./images/channel-8.jpeg" alt="profile image">
-        </div>
-
-        <div class="channel-info"> 
-          <p class="video-title">
-            Inside The World's Biggest Passenger Plane
-          </p>
-
-          <p class="channel-author">
-            Tech Vision
-          </p>
-
-          <p class="video-stats">
-            3.7M views · 10 months ago
-          </p>
-
-        </div>
-
-      </div>
-
-      
-      
-    </div>
-
-     <div class="video-card">
-      <div class="thumbnail-container">
-        <img class="thumbnail-1" src="./images/thumbnail-5.webp">
-
-        <div class="video-time">11:17</div>
-      </div>
-      
-      <div class="channel-details-grid">
-        <!-- Channel image and info -->
-        <div class="channel-image">
-          <img class="channel-picture" src="./images/channel-5.jpeg" alt="profile image">
-        </div>
-
-        <div class="channel-info"> 
-          <p class="video-title">
-            Kadane's Algorithm to Maximum Sum Subarray Problem
-          </p>
-
-          <p class="channel-author">
-            CS Dojo
-          </p>
-
-          <p class="video-stats">
-            519K views · 5 years ago
-          </p>
-
-        </div>
-
-      </div>
-      
-    </div>
-
-    <div class="video-card">
-      <div class="thumbnail-container">
-        <img class="thumbnail-1" src="./images/thumbnail-6.webp">
-
-        <div class="video-time">19:59</div>
-      </div>
-      
-      <div class="channel-details-grid">
-        <!-- Channel image and info -->
-        <div class="channel-image">
-          <img class="channel-picture" src="./images/channel-6.jpeg" alt="profile image">
-        </div>
-
-        <div class="channel-info"> 
-          <p class="video-title">
-            Anything You Can Fit In The Circle I’ll Pay For
-          </p>
-
-          <p class="channel-author">
-            MrBeast
-          </p>
-
-          <p class="video-stats">
-            141M views · 1 year ago
-          </p>
-
-        </div>
-
-      </div>
-      
-    </div>
-
-     <div class="video-card">
-      <div class="thumbnail-container">
-        <img class="thumbnail-1" src="./images/thumbnail-7.webp">
-
-        <div class="video-time">10:13</div>
-      </div>
-      
-      <div class="channel-details-grid">
-        <!-- Channel image and info -->
-        <div class="channel-image">
-          <img class="channel-picture" src="./images/channel-7.jpeg" alt="profile image">
-        </div>
-
-        <div class="channel-info"> 
-          <p class="video-title">
-            Why Planes Don't Fly Over Tibet
-          </p>
-
-          <p class="channel-author">
-            RealLifeLore
-          </p>
-
-          <p class="video-stats">
-            6.6M views · 1 year ago
-          </p>
-
-        </div>
-
-      </div>
-      
-    </div>
-
-    <div class="video-card">
-      <div class="thumbnail-container">
-        <img class="thumbnail-1" src="./images/thumbnail-8.webp">
-
-        <div class="video-time">7:12</div>
-      </div>
-      
-      <div class="channel-details-grid">
-        <!-- Channel image and info -->
-        <div class="channel-image">
-          <img class="channel-picture" src="./images/channel-8.jpeg" alt="profile image">
-        </div>
-
-        <div class="channel-info"> 
-          <p class="video-title">
-            Inside The World's Biggest Passenger Plane
-          </p>
-
-          <p class="channel-author">
-            Tech Vision
-          </p>
-
-          <p class="video-stats">
-            3.7M views · 10 months ago
-          </p>
-
-        </div>
-
-      </div>
-
-      
-      
-    </div>
-
-  </section>
-
- </main>
+<!-- </form>-->
+<!-- HTML5 Speech Recognition API-->
+          
+<script>
+            
+  function startDictation() {
+
+    if (window.hasOwnProperty('webkitSpeechRecognition')) {
+      document.getElementById('micinform').style.display="inline";
+      setTimeout(function(){document.getElementById('micinform').style.display="none";}, 600);
+      var recognition = new webkitSpeechRecognition();
+
+      recognition.continuous = false;
+      recognition.interimResults = false;
+
+      recognition.lang = "en-US";
+      recognition.start();
+
+      recognition.onresult = function(e) {
+        document.getElementById('transcript').value
+                                 = e.results[0][0].transcript;
+        recognition.stop();
+        document.getElementById('micinform').style.display="none";
+        document.getElementById('beginvsearch').style.display="inline";
+        document.getElementById('searchbox').submit();
+      };
+
+      recognition.onerror = function(e) {
+        document.getElementById('micinform').style.display="inline";
+        recognition.stop();
+      }
+
+    }
+  }
+ </script>
+
+        <input id="searchby" type="radio" name="by" value="series" checked>
+        Series
+        <input id="searchby" type="radio" name="by" value="episodes">
+        Episodes
+        </fieldset>
+      </form>
     
+  </div>
 
-  
+  <br>
+
+  <div class="mainbox3" style="text-align: center;">
+    <br>
+    <small>Follow us on social media for latest updates</small>
+    <br>
+  </b>
+  <small>
+    <br>
+    
+      <div style="text-align: center;">
+  <table style="border: none; display: inline-block;">
+      <tbody>
+          <tr>
+            <td style="vertical-align: top;">
+              <small>Facebook:</small>
+            </td>
+            <td style="vertical-align: middle;">
+              <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ffztvseries&amp;width=90&amp;layout=button_count&amp;action=like&amp;size=small&amp;share=false&amp;height=21&amp;appId" width="90" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </td>
+            <td style="vertical-align: top;">
+              <small> | Telegram:
+                <a href="https://t.me/fztvseries">
+                  <b>
+                    <i>
+                      <u>Join @fztvseries</u>
+                    </i>
+                  </b>
+                </a>
+                  | Instagram:
+                <a href="https://www.instagram.com/fztvseries/">
+                  
+              </small>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    
+  </b>
+  </small>
+</div>
+<br>
+<br>
+  <div class="mainbox2">
+    <b>
+      <small>
+        <a  href="//fztvseries.live/">FzMovies - Best Quality movies for Mobiles and Tablets https://fzmovies.live</a>
+      </small>
+    </b>
+    </div>
+
+<br>
+    <div class="mainbox3">
+      <img src="./images/new.gif" alt="New">
+      <b>
+        <small>
+          Request TvShows or Report error with existing ones, Email us at 
+          <a href="mailto:support@mobiletvshows.site">support@mobiletvshows.site</a>
+        </small>
+      </b>
+    </div>
+  <br>
+    <div class="topbox">
+  <ul class="topboxul">
+    <li>
+      <a href="https://www.fzmovies.live" target="_blank">
+        Visit FzMovies for HD Quality Mobile Movies in 3GP, MP4, and MKV Format
+      </a>
+    </li>
+    <li>
+      <span>Download TV Shows, Cartoons, Anime, Documentaries free for mobiles, tablets, PC in AVI, MP4, and WebM (HD quality)</span>
+    </li>
+    <li>
+      Need help? Email us at
+      <a href="mailto:support@mobiletvshows.site">support@mobiletvshows.site</a>
+      along with a screenshot of the error.
+    </li>
+    <li>
+      Advertisement proposals:
+      <a href="mailto:advertisement@fzmovies.net">advertisement@fzmovies.net</a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="mainbox2">
+  <h2>Top Recommended TV Shows for You</h2>
+  <hr>
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <a href="subfolder-Nikita.htm">
+        <img src="imdb_simages/Nikita.jpg" alt="Nikita">
+        <small>Nikita</small>
+      </a>
+      <a href="subfolder-Nikita.htm">
+        <img src="./images/Star.Wars.The.Clone.Wars.jpg" alt="Star Wars The Clone Wars">
+        <small>Star Wars: The Clone Wars</small>
+      </a>
+      <a href="subfolder-Nikita.htm">
+        <img src="./images/New.Girl.jpg" alt="New Girl">
+        <small>New Girl</small>
+      </a>
+      <a href="subfolder-Nikita.htm">
+        <img src="./images/Kyle_XY.jpg" alt="Kyle XY">
+        <small>Kyle XY</small>
+      </a>
+      <a href="subfolder-Nikita.htm">
+        <img src="./images/Switched.at.Birth.jpg" alt="Switched at Birth">
+        <small>Switched at Birth</small>
+      </a>
+      <a href="subfolder-Nikita.htm">
+        <img src="./images/Fringe.jpg" alt="Fringe">
+        <small>Fringe</small>
+      </a>
+      <a href="subfolder-Nikita.htm">
+        <img src="./images/One.Tree.Hill.jpg" alt="One Tree Hill">
+        <small>One Tree Hill</small>
+      </a>
+      <a href="subfolder-Nikita.htm">
+        <img src="./images/Empire.jpg" alt="One Tree Hill">
+        <small>Empire</small>
+      </a>
+      <a href="subfolder-Nikita.htm">
+        <img src="./images/Greys.Anatomy.jpg" alt="One Tree Hill">
+        <small>Greys Anatomy</small>
+      </a>
+      <a href="subfolder-Nikita.htm">
+        <img src="./images/Grimm.jpg" alt="One Tree Hill">
+        <small>Grimm</small>
+      </a>
+      <a href="subfolder-Nikita.htm">
+        <img src="./images/Heroes.jpg" alt="One Tree Hill">
+        <small>Heroes</small>
+      </a>
+      <a href="subfolder-Nikita.htm">
+        <img src="./images/NCIS.jpg" alt="One Tree Hill">
+        <small>NCIS`</small>
+      </a>
+      <a href="subfolder-Nikita.htm">
+        <img src="./images/Chuck.jpg" alt="One Tree Hill">
+        <small>Chuck</small>
+      </a>
+      <a href="subfolder-Nikita.htm">
+        <img src="./images/90210.jpg" alt="One Tree Hill">
+        <small>90210</small>
+      </a>
+    </div>
+  </div>
+  <hr>
+</div>
+
+<br>
+
+<div class="mainpagebox">
+  <div class="link-item">
+    <a href="favorites.php">Trending Right Now</a>
+    <span class="new-label">New</span>
+  </div>
+
+  <div class="link-item">
+    <a href="favorites.php">Series born in 2025</a>
+    <span class="new-label">New</span>
+  </div>
+
+  <div class="link-item">
+    <a href="favorites.php">Top Rated Miniseries</a>
+    <span class="new-label">New</span>
+  </div>
+
+  <div class="link-item">
+    <a href="netorig.php">Netflix Originals</a> |
+    <a href="hb.php">HBO Originals</a> |
+    <a href="amaz.php">Amazon Originals</a>
+    <span class="new-label">New</span>
+  </div>
+
+  <div class="link-item">
+    <a href="imdbtop250.php">IMDB Top 250</a>
+  </div>
+
+  <div class="link-item">
+    <a href="imdbtop250.php">Search by Genre</a>
+  </div>
+
+  <div class="link-item">
+    <a href="imdbtop250.php">TV series by Alphabetical Order</a>
+  </div>
+
+  <div class="tvalphas">
+    <a href="tv.php?alpha=AtoZ">ALL</a> -
+    <a href="tv.php?alpha=AtoZ">A to C</a> -
+    <a href="tv.php?alpha=AtoZ">D to F</a> -
+    <a href="tv.php?alpha=AtoZ">G to I</a> -
+    <a href="tv.php?alpha=AtoZ">J to L</a> -
+    <a href="tv.php?alpha=AtoZ">M to 0</a> -
+    <a href="tv.php?alpha=AtoZ">P to R</a> -
+    <a href="tv.php?alpha=AtoZ">S to U</a> -
+    <a href="tv.php?alpha=AtoZ">V to Z</a> -
+    <a href="tv.php?alpha=AtoZ">1 to 9</a>
+  </div>
+
+  <div class="link-item" style="text-align: center;">
+    <a href="cartoon.php">Cartoon/Anime</a>
+  </div>
+
+  <div class="link-item" style="text-align: center;">
+    <a href="google.php">Google Search the Site</a>
+  </div>
+</div>
+
+<br>
+
+
+<br>
+
+<div class="updates-section">
+  <div class="update-box">
+    <h3><a href="updates.php">Latest Updated Series</a></h3>
+    <ol>
+      <li><a href="subfolder-Resident Alien.htm">Resident Alien</a></li>
+      <li><a href="subfolder-Cops.htm">Cops</a></li>
+      <li><a href="subfolder-Ginny And Georgia.htm">Ginny And Georgia</a></li>
+      <li><a href="subfolder-The Cleaning Lady US.htm">The Cleaning Lady US</a></li>
+      <li><a href="subfolder-Welcome To Wrexham.htm">Welcome To Wrexham</a></li>
+      <li><a href="subfolder-Bobs Burgers.htm">Bobs Burgers</a></li>
+      <li><a href="subfolder-Jersey Shore Family Vacation.htm">Jersey Shore Family Vacation</a></li>
+      <li><a href="subfolder-The Chi.htm">The Chi</a></li>
+      <li><a href="subfolder-SurrealEstate.htm">SurrealEstate</a></li>
+      <li><a href="subfolder-Clarksons Farm.htm">Clarksons Farm</a></li>
+    </ol>
+  </div>
+
+  <div class="update-box">
+    <h3><a href="fupdates.php">Latest Additions to DB</a></h3>
+    <ol>
+      <li><a href="episode.php?fileid=182940&ftype=2">Ginny and Georgia - S03E10</a></li>
+      <li><a href="episode.php?fileid=182939&ftype=2">Resident Alien - S04E01</a></li>
+      <li><a href="episode.php?fileid=182937&ftype=2">Welcome to Wrexham - S04E05</a></li>
+      <li><a href="episode.php?fileid=182936&ftype=2">The Cleaning Lady US - S04E12</a></li>
+      <li><a href="episode.php?fileid=182935&ftype=2">The Cleaning Lady US - S04E11</a></li>
+      <li><a href="episode.php?fileid=182934&ftype=2">Bobs Burgers - S15E13</a></li>
+      <li><a href="episode.php?fileid=182932&ftype=2">The Chi - S07E04</a></li>
+      <li><a href="episode.php?fileid=182931&ftype=2">SurrealEstate - S03E10</a></li>
+      <li><a href="episode.php?fileid=182929&ftype=2">Duster - S01E04</a></li>
+      <li><a href="episode.php?fileid=182928&ftype=2">Murderbot - S01E05</a></li>
+    </ol>
+  </div>
+</div>
+<br>
+<br>
+<a href="https://www.fzmovies.net" class="link-button">FzMovies</a>
+<br><br>
+
+<div class="centered-link">
+  <a href="faq.php" class="faq-button">FAQs</a>
+</div>
+<br>
+
+
+
+
 </body>
-</html>
